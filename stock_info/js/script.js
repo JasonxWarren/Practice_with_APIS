@@ -20,9 +20,6 @@ fetch(`https://yfapi.net/v6/finance/quote?region=US&lang=en&symbols=`+ userInput
     $('#Price').html(stocks.quoteResponse.result[0].regularMarketPrice);
    $('#Name').html(stocks.quoteResponse.result[0].displayName);
    $('#PE').html(stocks.quoteResponse.result[0].trailingPE);
-    console.log(stocks)
-    //console.log(stocks.quoteResponse.result[0].language)
-    //stocks.quoteResponse.result.forEach(stock => stocksList(stock)
 })
 .catch(function(error) {
     alert("Well This Isn't good");
@@ -59,7 +56,7 @@ fetch(`https://yfapi.net/v1/finance/trending/US`, configuration)
 });
 })
 .catch(function(error) {
-    alert("Well This also not good");
+    alert("Well This also is not good");
     console.log(error.message)
 });
 })
