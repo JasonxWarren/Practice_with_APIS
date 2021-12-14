@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+    <title>Stock Info</title>
+</head>
+<body>
+    <h1> Enter a Stock Ticker below to learn more about it</h1>
+    <h3>Some examples of stock tickers are: <br> AAPL, AMZN, MSFT, SHOP, XOM, GOOGL or FB </br></h3>
+    <form>
+        <input type="text" placeholder="Stock Ticker like AAPL"/>
+        <input type="submit" value="Get Stock info" />
+      </form>
+  
+    <dl>
+        <dt>Price:</dt>
+        <dd id="Price"></dd>
+        <dt>Name of Company:</dt>
+        <dd id="Name"></dd>
+        <dt>Price to Earnings Ratio:</dt>
+        <dd id="PE"></dd>
+      </dl>
+
+      <h2>OR</h2>
+      <button class="random_info"> Pick a Random Trending Stock</button>
+      <dl>
+          <dt>Your Random selection is:</dt>
+          <dd id="trending"></dd>
+      </dl>
+
+      <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_15/3299731/200408-wall-street-al-0923.jpg">
+    
+</body>
+</html>
